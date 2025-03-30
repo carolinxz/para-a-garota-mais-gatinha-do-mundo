@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        #nao {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ana Luiza, você é a garota mais linda do mundo</h1>
+    <p>Aceita ir à rave comigo hoje às 23:59? 😎</p>
+    <img src="src.png" alt="Descrição da imagem">
+    <br><br>
+    <button onclick="alert('arrasou gatinha, sabia que iria aceitar rsrsrsrsrs 😍')">Sim</button>
+    <button id="nao" onmouseover="fugir()">Não</button>
+    
+    <script>
+        function fugir() {
+            let botao = document.getElementById('nao');
+            let x = Math.random() * (window.innerWidth - botao.clientWidth);
+            let y = Math.random() * (window.innerHeight - botao.clientHeight);
+            botao.style.left = `${x}px`;
+            botao.style.top = `${y}px`;
+        }
+    </script>
+</body>
+</html>
+
